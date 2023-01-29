@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="credit-card-regular.svg" type="image/x-icon"/>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- FontAwesome Icons -->
@@ -17,22 +18,32 @@
 
 <body>
   <!-- CONTAINER -->
-  <div class="container border rounded">
-    <div class="alert alert-dark" role="alert">
-      Some fields are missing
-    </div>
-    <form>
+  <div class="container mt-4">
+    <!-- HEADER -->
+    <div class="form-row m-0 border rounded-top bg-light">
+      <header class="p-1 pl-4"><h1 class="h2">Payment Form Example</h1></header>
+    </div>  
+    <form class="border p-4">
+      <!-- ALERT -->
+      <div class="alert alert-dark" role="alert">
+        Some fields are missing
+      </div>
       <!-- ROW 1 -->
       <div class="form-row">
-        <div class="form-group col-md">
+        <!-- CARD NUMBER -->
+        <div class="form-group col-md-5 pr-4">
           <label for="ccNum">Card #</label>
           <input type="number" class="form-control" id="ccNum" placeholder="XXXXXXXXXXXXXXXX" >
         </div>
-        <div class="form-group col-md">
+        <!-- CVC -->
+        <div class="form-group col-md pr-4">
           <label for="cvc">CVC</label>
-          <input type="text" class="form-control" id="cvc" placeholder="0000">
+          <input type="number" class="form-control" id="cvc" placeholder="0000">
         </div>
-        <div class="form-group col-md">
+        <!-- AMOUNT -->
+        
+        <i class="pt-4 fa-solid fa-dollar-sign"></i>
+        <div class="form-group col-md-4 pl-0">
           <label for="inputAmount">Amount</label>
           <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
         </div>
@@ -60,38 +71,40 @@
           <label for="inputState">State</label>
           <select id="inputState" class="form-control">
             <option selected>Pick a state</option>
-            <option>...</option>
+            <option>Florida</option>
           </select>
         </div>
         <!-- ZIP -->
         <div class="form-group col-md-3">
           <label for="inputZip">Postal Code</label>
-          <input type="text" class="form-control" id="inputZip">
+          <input type="number" class="form-control" id="inputZip">
         </div>
       </div>
       <!-- ROW 4 -->
       <div class="form-row">
         <div class="form-group col-3">
           <p>We accept:</p>
-          <!-- MASTERCARD RADIO-->
-          <div class="form-check form-check-inline">
-            <label class="form-check-input" for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
-            <input class="form-check-label" type="radio" id="mastercard" name="payments">
-          </div>
-          <!-- VISA RADIO-->
-          <div class="form-check form-check-inline">
-            <label class="form-check-input" for="visa"><i class="fa-brands fa-cc-visa"></i></label>
-            <input class="form-check-label" type="radio" id="visa" name="payments">
-          </div>
-          <!-- DINERSCLUB RADIO-->
-          <div class="form-check form-check-inline">
-            <label class="form-check-input" for="dinersClub"><i class="fa-brands fa-cc-diners-club"></i></label>
-            <input class="form-check-label" type="radio" id="dinersClub" name="payments">
-          </div>
-          <!-- AMEX RADIO-->
-          <div class="form-check form-check-inline">
-            <label class="form-check-input" for="amex"><i class="fa-brands fa-cc-amex"></i></label>
-            <input class="form-check-label" type="radio" id="amex" name="payments">
+          <div class="bg-secondary rounded text-center align-middle">
+            <!-- MASTERCARD RADIO-->
+            <div class="form-check form-check-inline">
+              <input class="form-check-label" type="radio" id="mastercard" name="payments">
+              <label class="form-check-input" for="mastercard"><i class="text-white fa-brands fa-cc-mastercard"></i></label>
+            </div>
+            <!-- VISA RADIO-->
+            <div class="form-check form-check-inline">
+              <input class="form-check-label" type="radio" id="visa" name="payments">
+              <label class="form-check-input" for="visa"><i class="text-white fa-brands fa-cc-visa"></i></label>
+            </div>
+            <!-- DINERSCLUB RADIO-->
+            <div class="form-check form-check-inline">
+              <input class="form-check-label" type="radio" id="dinersClub" name="payments">
+              <label class="form-check-input" for="dinersClub"><i class="text-white fa-brands fa-cc-diners-club"></i></label>
+            </div>
+            <!-- AMEX RADIO-->
+            <div class="form-check form-check-inline">
+              <input class="form-check-label" type="radio" id="amex" name="payments">
+              <label class="form-check-input" for="amex"><i class="text-white fa-brands fa-cc-amex"></i></label>
+            </div>
           </div>
         </div>
         <div class="col-md-3 no-gutter">&nbsp;</div>
@@ -102,16 +115,16 @@
           <small id="message" class="form-text text-muted">Add any notes here.</small>
         </div>
       </div>
-      <!-- BUTTONS -->
-      <div class="form-row">
-        <div class="form-group col-1 offset-10">
-          <button type="button" class="btn btn-secondary">Cancel</button>
-        </div>
-        <div class="form-group col-1">    
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>   
-      </div>
     </form>
+    <!-- BUTTONS -->
+    <div class="form-row pt-3 border rounded-bottom m-0 bg-light">
+      <div class="form-group col-1 offset-10">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+      </div>
+      <div class="form-group col-1">    
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>   
+    </div>
 
 
 

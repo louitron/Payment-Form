@@ -1,6 +1,8 @@
 i {
-    font-size: 20pt;
+    font-size: 12pt;
+    margin-top: 10px;
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
