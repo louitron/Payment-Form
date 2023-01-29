@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/77358afe30.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Payment Form</title>
+</head>
+
+<body>
+  <!-- CONTAINER -->
+  <div class="container">
+
+    <form>
+      <!-- ROW 1 -->
+      <div class="form-row">
+        <div class="form-group col-md">
+          <label for="ccNum">Card Number</label>
+          <input type="text" class="form-control" id="ccNum" placeholder="XXXXXXXXXXXXXXXX">
+        </div>
+        <div class="form-group col-md">
+          <label for="cvc">CVC</label>
+          <input type="text" class="form-control" id="cvc" placeholder="0000">
+        </div>
+        <div class="form-group col-md">
+          <label for="inputAmount">Amount</label>
+          <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+        </div>
+      </div>
+      <!-- ROW 2 -->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputFirst">First Name</label>
+          <input type="text" class="form-control" id="inputFirst" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputLast">Last Name</label>
+          <input type="text" class="form-control" id="inputLast" placeholder="">
+        </div>
+      </div>
+      <!-- ROW 3 -->
+      <div class="form-row">
+        <!-- CITY -->
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <!-- STATE -->
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Pick a state</option>
+            <option>...</option>
+          </select>
+        </div>
+        <!-- ZIP -->
+        <div class="form-group col-md-2">
+          <label for="inputZip">Postal Code</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <!-- ROW 4 -->
+      <div class="form-row">
+        <div>
+        <!-- MASTERCARD -->
+        <div class="form-check form-check-inline">
+          <label class="form-check-input" for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
+          <input class="form-check-label" type="radio" id="mastercard" name="payments">
+        </div>
+        <!-- VISA -->
+        <div class="form-check form-check-inline">
+          <label class="form-check-input" for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+          <input class="form-check-label" type="radio" id="visa" name="payments">
+        </div>
+        <!-- DINERSCLUB -->
+        <div class="form-check form-check-inline">
+          <label class="form-check-input" for="dinersClub"><i class="fa-brands fa-cc-diners-club"></i></label>
+          <input class="form-check-label" type="radio" id="dinersClub" name="payments">
+        </div>
+        <!-- AMEX -->
+        <div class="form-check form-check-inline">
+          <label class="form-check-input" for="amex"><i class="fa-brands fa-cc-amex"></i></label>
+          <input class="form-check-label" type="radio" id="amex" name="payments">
+        </div>
+        </div>
+        <!-- MESSAGE BOX -->
+        <div class="form-group w-50">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="5"></textarea>
+          <small id="message" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+      </div>
+    </form>
+
+
+
+
+  </div>
+
+</body>
+
+</html>
