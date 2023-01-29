@@ -69,33 +69,35 @@
       </div>
       <!-- ROW 4 -->
       <div class="form-row">
-        <div form-group>
-          <!-- MASTERCARD -->
+        <div class="form-group col-3">
+          <p>We accept:</p>
+          <!-- MASTERCARD RADIO-->
           <div class="form-check form-check-inline">
             <label class="form-check-input" for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
             <input class="form-check-label" type="radio" id="mastercard" name="payments">
           </div>
-          <!-- VISA -->
+          <!-- VISA RADIO-->
           <div class="form-check form-check-inline">
             <label class="form-check-input" for="visa"><i class="fa-brands fa-cc-visa"></i></label>
             <input class="form-check-label" type="radio" id="visa" name="payments">
           </div>
-          <!-- DINERSCLUB -->
+          <!-- DINERSCLUB RADIO-->
           <div class="form-check form-check-inline">
             <label class="form-check-input" for="dinersClub"><i class="fa-brands fa-cc-diners-club"></i></label>
             <input class="form-check-label" type="radio" id="dinersClub" name="payments">
           </div>
-          <!-- AMEX -->
+          <!-- AMEX RADIO-->
           <div class="form-check form-check-inline">
             <label class="form-check-input" for="amex"><i class="fa-brands fa-cc-amex"></i></label>
             <input class="form-check-label" type="radio" id="amex" name="payments">
           </div>
         </div>
+        <div class="col-md-3 no-gutter">&nbsp;</div>
         <!-- MESSAGE BOX -->
-        <div class="form-group offset-3">
+        <div class="form-group col-6">
           <label for="message">Message</label>
           <textarea class="form-control" id="message" rows="5"></textarea>
-          <small id="message" class="form-text text-muted">Enter your message here.</small>
+          <small id="message" class="form-text text-muted">Add any notes here.</small>
         </div>
       </div>
     </form>
