@@ -1,8 +1,10 @@
+/* ICON FONTS */
 i {
     font-size: 12pt;
     margin-top: 10px;
 }
 
+/* GET RID OF UP/DOWN ARROWS FOR NUMBER INPUT */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

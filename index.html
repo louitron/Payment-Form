@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <!-- META -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="credit-card-regular.svg" type="image/x-icon"/>
-  <!-- CSS -->
+  <title>Payment Form</title>
+  <!-- TITLE ICON -->
+  <link rel="icon" href="credit-card-regular.svg" type="image/x-icon" />
+  <!-- LOCAL CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/77358afe30.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Payment Form</title>
 </head>
 
 <body>
@@ -21,27 +22,28 @@
   <div class="container mt-4">
     <!-- HEADER -->
     <div class="form-row m-0 border rounded-top bg-light">
-      <header class="p-1 pl-4"><h1 class="h2">Payment Form Example</h1></header>
-    </div>  
+      <header class="p-1 pt-2 pl-4">
+        <h1 class="h2">Payment Form Example</h1>
+      </header>
+    </div>
     <form class="border p-4">
       <!-- ALERT -->
       <div class="alert alert-dark" role="alert">
-        Some fields are missing
+        <span>Some fields are missing</span>
       </div>
       <!-- ROW 1 -->
       <div class="form-row">
-        <!-- CARD NUMBER -->
+        <!--INPUT CARD NUMBER -->
         <div class="form-group col-md-5 pr-4">
           <label for="ccNum">Card #</label>
-          <input type="number" class="form-control" id="ccNum" placeholder="XXXXXXXXXXXXXXXX" >
+          <input type="number" class="form-control" id="ccNum" placeholder="XXXXXXXXXXXXXXXX">
         </div>
-        <!-- CVC -->
+        <!-- INPUT CVC -->
         <div class="form-group col-md pr-4">
           <label for="cvc">CVC</label>
           <input type="number" class="form-control" id="cvc" placeholder="0000">
         </div>
-        <!-- AMOUNT -->
-        
+        <!-- INPUT AMOUNT -->
         <i class="pt-4 fa-solid fa-dollar-sign"></i>
         <div class="form-group col-md-4 pl-0">
           <label for="inputAmount">Amount</label>
@@ -50,10 +52,12 @@
       </div>
       <!-- ROW 2 -->
       <div class="form-row">
+        <!-- INPUT FIRST NAME -->
         <div class="form-group col-md-6">
           <label for="inputFirst">First Name</label>
           <input type="text" class="form-control" id="inputFirst" placeholder="">
         </div>
+        <!-- INPUT LAST NAME -->
         <div class="form-group col-md-6">
           <label for="inputLast">Last Name</label>
           <input type="text" class="form-control" id="inputLast" placeholder="">
@@ -61,12 +65,12 @@
       </div>
       <!-- ROW 3 -->
       <div class="form-row">
-        <!-- CITY -->
+        <!-- INPUT CITY -->
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
           <input type="text" class="form-control" id="inputCity">
         </div>
-        <!-- STATE -->
+        <!-- INPUT STATE -->
         <div class="form-group col-md-3">
           <label for="inputState">State</label>
           <select id="inputState" class="form-control">
@@ -74,7 +78,7 @@
             <option>Florida</option>
           </select>
         </div>
-        <!-- ZIP -->
+        <!-- INPUT ZIP -->
         <div class="form-group col-md-3">
           <label for="inputZip">Postal Code</label>
           <input type="number" class="form-control" id="inputZip">
@@ -82,13 +86,15 @@
       </div>
       <!-- ROW 4 -->
       <div class="form-row">
+        <!-- CARD TYPE SELECT -->
         <div class="form-group col-3">
           <p>We accept:</p>
           <div class="bg-secondary rounded text-center align-middle">
             <!-- MASTERCARD RADIO-->
             <div class="form-check form-check-inline">
               <input class="form-check-label" type="radio" id="mastercard" name="payments">
-              <label class="form-check-input" for="mastercard"><i class="text-white fa-brands fa-cc-mastercard"></i></label>
+              <label class="form-check-input" for="mastercard"><i
+                  class="text-white fa-brands fa-cc-mastercard"></i></label>
             </div>
             <!-- VISA RADIO-->
             <div class="form-check form-check-inline">
@@ -98,7 +104,8 @@
             <!-- DINERSCLUB RADIO-->
             <div class="form-check form-check-inline">
               <input class="form-check-label" type="radio" id="dinersClub" name="payments">
-              <label class="form-check-input" for="dinersClub"><i class="text-white fa-brands fa-cc-diners-club"></i></label>
+              <label class="form-check-input" for="dinersClub"><i
+                  class="text-white fa-brands fa-cc-diners-club"></i></label>
             </div>
             <!-- AMEX RADIO-->
             <div class="form-check form-check-inline">
@@ -116,19 +123,18 @@
         </div>
       </div>
     </form>
+    <!-- ROW 5 -->
     <!-- BUTTONS -->
     <div class="form-row pt-3 border rounded-bottom m-0 bg-light">
+      <!-- CANCEL -->
       <div class="form-group col-1 offset-10">
         <button type="button" class="btn btn-secondary">Cancel</button>
       </div>
-      <div class="form-group col-1">    
+      <!-- SUBMIT -->
+      <div class="form-group col-1">
         <button type="button" class="btn btn-primary">Submit</button>
-      </div>   
+      </div>
     </div>
-
-
-
-
   </div>
 
 </body>
